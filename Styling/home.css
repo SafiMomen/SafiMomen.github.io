@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+}
+
+#originSection {
+  padding-bottom: 50px !important;
+}
+
+.background {
+  background-color: #D9D9D9;
+}
+
+.background2 {
+  background-color: #F15025;
+}
+
+.intro {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blackImage {
+  filter: invert(100%);
+}
+
+#gameJoyLogo {
+  margin-bottom: 50px !important;
+}
