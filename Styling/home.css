@@ -6,7 +6,10 @@
 }
 
 #originSection {
-  padding-bottom: 50px !important;
+  margin-top: -1px !important;
+  margin-bottom: -1px !important;
+
+  padding: 10px 100px 10px 100px;
 }
 
 .background {
@@ -25,6 +28,76 @@
   filter: invert(100%);
 }
 
-#gameJoyLogo {
-  margin-bottom: 50px !important;
+.gameJoyLogo {
+  position: relative;
+}
+
+@keyframes hover {
+  0% {
+    transform: translate(-50%, -40%);
+  }
+
+  50% {
+    transform: translate(-50%, -35%);
+  }
+
+  100% {
+    transform: translate(-50%, -40%);
+  }
+}
+
+#gameJoyLogoIcon {
+  animation-name: hover;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.35, .2, .3, 1);
+}
+
+@keyframes hoverBack {
+  0% {
+    transform: translate(-50%, -60%);
+  }
+
+  50% {
+    transform: translate(-50%, -70%);
+  }
+
+  100% {
+    transform: translate(-50%, -60%);
+  }
+}
+
+#gameJoyLogoFlame {
+  animation-name: hoverBack;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.35, .2, .3, 1);
+}
+
+@media (max-width: 768px) {
+  .gameJoyLogo {
+    margin-top: 300px !important;
+    margin-bottom: 300px !important;
+  }
+
+  .intro {
+    font-size: 17px !important;
+    padding: 25px !important;
+  }
+
+  #originSection {
+    padding: 10px 50px 20px 50px;
+  }
+
+  .originContent {
+    margin-top: 40px !important;
+  }
+
+  .emailSection {
+    padding-top: 150px;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
