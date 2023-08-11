@@ -1,0 +1,33 @@
+#mouseEffectContainer {
+  position: fixed !important;
+
+  margin: 0px;
+  padding: 0px;
+  top: 0px !important;
+  left: 0px !important;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.mouseEffectBubble {
+  padding: 0px;
+  margin: 0px;
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transform: scale(0%);
+  background: #a32300;
+
+  position: fixed !important;
+}
+
+.mouseEffectAnimated {
+  transform: scale(200%);
+  opacity: 0%;
+
+  transition: 0.4s;
+}

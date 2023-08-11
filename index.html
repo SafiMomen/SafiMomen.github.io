@@ -12,10 +12,13 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="./Styling/home.css" rel="stylesheet" type="text/css" />
   <link href="./Styling/navbar.css" rel="stylesheet" type="text/css" />
+  
+  <link href="./Styling/mouseEffect.css" rel="stylesheet" type="text/css" />
+  <script src="javascript/mouseEffect.js" defer></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark justify-content-around align-middle">
+  <nav class="navbar navbar-dark bg-dark justify-content-around align-middle user-select-none">
     <a href="#" class="brandLogo navbar-brand">
       <img src="./Images/SmallLogo.png" width="45px" />
       GAMEJOY
@@ -32,16 +35,16 @@
         <a class="nav-link" href="#">QUESTIONS</a>
       </div>
       <div class="navbarItem">
-        <a class="nav-link" href="#">MISC</a> 
+        <a class="nav-link" href="mics.html">MISC</a>
       </div>
     </ul>
   </nav>
 
   <div id="topSection" class="row pt-5 pb-5 m-5">
     <div class="gameJoyLogo col-md-5 col-12 position-relative">
-      <img src="Images/BlueFlame.png" class="position-absolute centerFixed" id="gameJoyLogoFlame" width="90%" />
+      <img src="Images/BlueFlame.png" class="position-absolute centerFixed user-select-none" id="gameJoyLogoFlame" width="90%" />
 
-      <img src="Images/LargeLogo.svg" class="position-absolute centerFixed" id="gameJoyLogoIcon" width="50%" />
+      <img src="Images/LargeLogo.svg" class="position-absolute centerFixed user-select-none" id="gameJoyLogoIcon" width="50%" />
     </div>
 
     <div class="col-md-7 col-12 d-flex justify-content-center align-middle">
@@ -49,10 +52,19 @@
         <div id="gameShowcase" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner rounded shadow">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="Images/GameDemo1.png" alt="First slide">
+              <img class="d-block w-100" src="Images/GameDemo2.png" alt="Malice">
             </div>
+
             <div class="carousel-item">
-              <img class="d-block w-100" src="Images/GameDemo2.png" alt="Second slide">
+              <img class="d-block w-100" src="Images/GameDemo4.png" alt="Malice">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Images/GameDemo1.png" alt="Malice">
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Images/GameDemo3.png" alt="Malice">
             </div>
           </div>
 
@@ -66,8 +78,8 @@
           </button>
         </div>
 
-        <div class="mx-auto mt-3">
-          <h3 class="display-3">MALICE</h3>
+        <div class="mx-auto mt-3" id="gameTitle">
+          <h3 class="display-3">MALICE  <span class="fs-5 text-danger align-middle mt-3">IN DEVELOPMENT</span></h3>
           <button type="button" class="btn btn-lg button">MORE GAMES</button>
         </div>
       </div>
@@ -127,9 +139,9 @@
     </div>
 
     <div class="emailSection col-md-6 col-12 d-flex flex-column justify-content-center align-items-start">
-      <h1 class="display-3 mb-4">GET EMAILED OF OUR PROGRESS</h1>
+      <h1 class="display-3 mb-4 text-center text-md-left emailForm">GET EMAILED OF OUR PROGRESS</h1>
 
-      <div class="w-75">
+      <div class="w-75 emailForm">
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">EMAIL: </span>
           <input type="text" class="form-control" placeholder="you@email.com" aria-label="Username"
@@ -139,7 +151,11 @@
         <p class="fs-5">DON'T WORRY, YOU WILL BE ABLE TO UNSUBSCRIBE AT ANY MOMENT.YOU WILL BE EMAILED THE PROGRESS
           EVERY MONTH, IF NOT WEEK.</p>
 
-        <button type="button" class="btn btn-lg button">SEND EMAIL</button>
+        <button type="button" class="btn btn-lg button" id="emailSectionButton">SEND EMAIL</button>
+      </div>
+
+      <div class="d-none justify-content-center align-items-center" id="finishedEmailSection">
+        <h1 class="display-3 mb-4">EMAIL SUBMITTED</h1>
       </div>
     </div>
   </div>
@@ -155,7 +171,8 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="javascript/tips.js"></script>
+  <script src="javascript/emailSecton.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>

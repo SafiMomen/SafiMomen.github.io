@@ -1,4 +1,9 @@
 
+// ACTUAL FUNCTIONALITY IN OTHER JS FILES
+// ACTUAL FUNCTIONALITY IN OTHER JS FILES
+// ACTUAL FUNCTIONALITY IN OTHER JS FILES
+// ACTUAL FUNCTIONALITY IN OTHER JS FILES
+// ACTUAL FUNCTIONALITY IN OTHER JS FILES
 
 /*
 TODO:
@@ -8,14 +13,13 @@ TODO:
   - [X] Gamejoy home top
     - [X] Fix up the position 
     - [X] Fix up the logo/main (make it better)
-    - [] Responsive
+    - [X] Responsive
 
   - [X] Origin section
-    - [] Responsive
+    - [X] Responsive
 
   - [X] Contact section
-    - [] Responsive
+    - [X] Responsive
 
   - [X] Footer 
-    - [] Responsive
 */
