@@ -57,7 +57,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(.35, .2, .3, 1);
 }
-
+ 
 @keyframes hoverBack {
   0% {
     transform: translate(-50%, -60%);

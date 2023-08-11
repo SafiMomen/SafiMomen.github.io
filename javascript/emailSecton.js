@@ -14,7 +14,7 @@ emailSubmit.addEventListener("click", ()=>{
     }
 
     element.classList.add("d-none");
-  });
+  }); 
   
   emailSuccessful.classList.replace("d-none",  "d-flex");
   setTimeout(()=>{
