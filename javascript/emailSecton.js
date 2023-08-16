@@ -6,7 +6,9 @@ let emailSubmit = document.getElementById("emailSectionButton");
 let emailSuccessful = document.getElementById("finishedEmailSection");
 
 emailSubmit.addEventListener("click", ()=>{
-  if (emailField.value.length <= 0) return;
+  let input = emailField.value;
+  if (input.length <= 5) return;
+  if (!input.includes("@")) return;
   
   Array.from(emailForm).forEach((element)=>{
     if (element.classList.contains("d-flex")) {
