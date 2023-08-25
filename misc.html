@@ -37,25 +37,52 @@
     </ul>
   </nav>
 
-  <div id="wireframeShowcase" class="m-auto ">
-    <h1 class="display-2 text-black text-center pt-4 px-4 pb-2">WIREFRAME</h1>
+  <div id="wireframeShowcase" class="m-auto mt-5">
+    <div class="py-4 px-4 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-2 text-black text-center">WIREFRAME</h1>
+      <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#wireframeCollapse" aria-expanded="false" aria-controls="wireframeCollapse">
+        SHOW / HIDE
+      </button>
+    </div>
     
-    <div class="row justify-content-center">
-      <div class="col-3 p-2 glowingFrame d-flex justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center collapse" id="wireframeCollapse">
+      <div class="col-4 p-2 glowingFrame d-flex justify-content-center align-items-center">
         <img src="Images/Desktop1.svg" class="shadow w-100">
       </div>
 
-      <div class="col-3 p-2 glowingFrame d-flex justify-content-center align-items-center">
+      <div class="col-4 p-2 glowingFrame d-flex justify-content-center align-items-center">
         <img src="Images/Desktop2.svg" class="shadow w-100">
       </div>
     </div>
   </div>
 
-  <div id="brandShowcase" class="m-auto ">
-    <h1 class="display-2 text-black text-center pt-4 px-4 pb-2">BRAND</h1>
-    
-    <div class="d-flex justify-content-center glowingFrame align-items-center">
-      <img src="Images/Brand.svg" class="w-50 shadow"> 
+  <div id="brandShowcase" class="m-auto mt-3">
+    <div class="py-4 px-4 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-2 text-black text-center">BRAND KIT</h1>
+      <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#brandCollapse" aria-expanded="false" aria-controls="brandCollapse">
+        SHOW / HIDE
+      </button>
+    </div>
+
+    <div class="collapse" id="brandCollapse">
+      <div class="d-flex justify-content-center glowingFrame align-items-center">
+        <img src="Images/Brand.svg" class="w-50 shadow"> 
+      </div>
+    </div>
+  </div>
+
+  <div id="brandShowcase" class="mx-auto mt-3 mb-5">
+    <div class="py-4 px-4 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-2 text-black text-center">BRAND LOGO</h1>
+      <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#brandLogoCollapse" aria-expanded="false" aria-controls="brandLogoCollapse">
+       SHOW / HIDE
+      </button>
+    </div>
+
+    <div class="collapse" id="brandLogoCollapse">
+      <div class="d-flex justify-content-center glowingFrame align-items-center">
+        <img src="Images/BrandLogo.svg" class="w-50 shadow"/> 
+      </div>
     </div>
   </div>
 
